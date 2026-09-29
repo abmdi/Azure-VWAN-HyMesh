@@ -137,7 +137,11 @@ terraform plan -out=tfplan
 terraform apply tfplan
 ```
 
-### 🧪 Route Verification & Failover Simulation
+
+---
+
+
+## 🧪 Route Verification & Failover Simulation
 Execute the automated BGP auditing and route failover simulation script:
 
 ```bash
@@ -145,7 +149,9 @@ chmod +x ../scripts/failover-simulation.sh
 ../scripts/failover-simulation.sh
 ```
 
+
 ---
+
 
 ## 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
