@@ -99,7 +99,7 @@ Azure-VWAN-HyMesh/
 
 ## 🚀 Quick Start & Deployment Guide
 
-# Prerequisites: 
+### Prerequisites: 
 
 - Azure CLI >= 2.55.0
 
@@ -107,9 +107,35 @@ Azure-VWAN-HyMesh/
 
 - Active Azure Subscription with Owner or Network Contributor role.
 
-# Step 1: Clone Repository
+### Step 1: Clone Repository
 
 ```bash
 git clone [https://github.com/your-username/Azure-VWAN-HyMesh.git](https://github.com/your-username/Azure-VWAN-HyMesh.git)
 cd Azure-VWAN-HyMesh/terraform
 ```
+
+### Step 2: Set Variables
+
+```bash
+cp terraform.tfvars.example terraform.tfvars
+# Update terraform.tfvars with your Azure Subscription ID and network ranges
+```
+
+### Step 3: Initialize & Provision
+
+```bash
+terraform init
+terraform plan -out=tfplan
+terraform apply tfplan
+```
+
+## 🧪 Route Verification & Failover Simulation
+Execute the automated BGP auditing and route failover simulation script:
+
+```bash
+chmod +x ../scripts/failover-simulation.sh
+../scripts/failover-simulation.sh
+```
+
+## 📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
