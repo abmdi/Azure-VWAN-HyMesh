@@ -1,0 +1,24 @@
+# Local .terraform directories
+**/.terraform/
+**/.terraform.lock.hcl
+
+# Local state files
+*.tfstate
+*.tfstate.*
+*.tfvars
+!terraform.tfvars.example
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Exclude sensitive plan outputs
+*.tfplan
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE configuration files
+.vscode/
+.idea/
