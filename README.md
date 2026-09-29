@@ -10,7 +10,9 @@ An enterprise-ready, multi-region hybrid networking topology built on **Azure Vi
 
 Designed in accordance with Microsoft's **Cloud Adoption Framework (CAF)** and **Azure Enterprise-Scale Landing Zone** recommendations.
 
+
 ---
+
 
 ## 🌟 Key Architectural Highlights
 
@@ -20,7 +22,9 @@ Designed in accordance with Microsoft's **Cloud Adoption Framework (CAF)** and *
 - **Production-Grade Modular IaC:** Fully parameterized Terraform design leveraging sub-modules adhering to Azure Verified Modules standards.
 - **Automated Verification:** Custom bash and PowerShell scripts for BGP route table analysis, failover testing, and GitHub Actions CI/CD workflows.
 
+
 ---
+
 
 ## 📐 Enterprise Network Topology
 
@@ -58,7 +62,9 @@ Designed in accordance with Microsoft's **Cloud Adoption Framework (CAF)** and *
 +------------------+   +------------------+  +------------------+   +------------------+
 ```
 
+
 ---
+
 
 ## 📂 Directory Structure
 
@@ -95,7 +101,9 @@ Azure-VWAN-HyMesh/
 └── README.md
 ```
 
+
 ---
+
 
 ## 🚀 Quick Start & Deployment Guide
 
@@ -129,13 +137,15 @@ terraform plan -out=tfplan
 terraform apply tfplan
 ```
 
-## 🧪 Route Verification & Failover Simulation
+### 🧪 Route Verification & Failover Simulation
 Execute the automated BGP auditing and route failover simulation script:
 
 ```bash
 chmod +x ../scripts/failover-simulation.sh
 ../scripts/failover-simulation.sh
 ```
+
+---
 
 ## 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
