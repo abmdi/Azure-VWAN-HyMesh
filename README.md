@@ -56,3 +56,60 @@ Designed in accordance with Microsoft's **Cloud Adoption Framework (CAF)** and *
 | (10.1.0.0/16)    |   | (10.2.0.0/16)    |  | (10.3.0.0/16)    |   | (10.4.0.0/16)    |
 | - Private Endpts |   | - Domain/DNS     |  | - Web Tier       |   | - Migration Subnet|
 +------------------+   +------------------+  +------------------+   +------------------+
+```
+
+---
+
+## 📂 Directory Structure
+
+```text
+Azure-VWAN-HyMesh/
+├── .github/
+│   └── workflows/
+│       ├── terraform-ci.yml
+│       └── security-scan.yml
+├── docs/
+│   ├── architecture-diagram.drawio
+│   ├── bgp-routing-policy.md
+│   └── failover-runbook.md
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   ├── providers.tf
+│   ├── versions.tf
+│   ├── terraform.tfvars.example
+│   └── modules/
+│       ├── vwan_core/
+│       ├── vwan_hub/
+│       ├── expressroute_link/
+│       ├── ipsec_vpn_link/
+│       ├── secure_hub_firewall/
+│       └── spoke_vnet/
+├── scripts/
+│   ├── validate-bgp-routes.sh
+│   └── failover-simulation.sh
+├── .gitignore
+├── .tflint.hcl
+├── LICENSE
+└── README.md
+```
+
+---
+
+## 🚀 Quick Start & Deployment Guide
+
+# Prerequisites: 
+
+- Azure CLI >= 2.55.0
+
+- Terraform >= 1.6.0
+
+- Active Azure Subscription with Owner or Network Contributor role.
+
+# Step 1: Clone Repository
+
+```bash
+git clone [https://github.com/your-username/Azure-VWAN-HyMesh.git](https://github.com/your-username/Azure-VWAN-HyMesh.git)
+cd Azure-VWAN-HyMesh/terraform
+```
