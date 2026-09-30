@@ -1,0 +1,12 @@
+project_prefix     = "ent-net"
+environment        = "prod"
+primary_location   = "eastus"
+secondary_location = "westeurope"
+onprem_bgp_asn     = 65001
+
+common_tags = {
+  ManagedBy    = "Terraform"
+  Framework    = "Azure Cloud Adoption Framework"
+  Architecture = "Azure-VWAN-HyMesh"
+  CostCenter   = "Core-IT-Networking"
+}
