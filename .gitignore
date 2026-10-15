@@ -22,3 +22,23 @@ Thumbs.db
 # IDE configuration files
 .vscode/
 .idea/
+
+# Terraform local state and lock files
+**/.terraform/
+**/.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Environment variables & secrets
+*.tfvars
+!terraform.tfvars.example
+.env
+
+# OS & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
