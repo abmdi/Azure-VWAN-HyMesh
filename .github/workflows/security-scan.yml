@@ -1,1 +1,24 @@
+name: "Terraform Security & Quality Scan"
 
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  checkov:
+    name: "Checkov Static Analysis"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Checkov action
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: "terraform/"
+          framework: "terraform"
+          output_format: "cli"
+          soft_fail: false
