@@ -1,29 +1,4 @@
-# Local .terraform directories
-**/.terraform/
-**/.terraform.lock.hcl
-
-# Local state files
-*.tfstate
-*.tfstate.*
-*.tfvars
-!terraform.tfvars.example
-
-# Crash logs
-crash.log
-crash.*.log
-
-# Exclude sensitive plan outputs
-*.tfplan
-
-# OS specific files
-.DS_Store
-Thumbs.db
-
-# IDE configuration files
-.vscode/
-.idea/
-
-# Terraform local state and lock files
+# Terraform local state, locks and plans
 **/.terraform/
 **/.terraform.lock.hcl
 *.tfstate
@@ -32,13 +7,17 @@ Thumbs.db
 crash.log
 crash.*.log
 
-# Environment variables & secrets
+# Environment variables & sensitive secrets
 *.tfvars
 !terraform.tfvars.example
 .env
 
-# OS & IDE files
+# OS and system files
 .DS_Store
 Thumbs.db
+
+# IDE and editor configurations
 .vscode/
 .idea/
+*.swp
+*.swo
